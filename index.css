@@ -1,0 +1,709 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+}
+
+#loader{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    color: black;
+}
+
+/* NAVIGATION */
+nav {
+    padding: 4rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: black;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+    background-color: #FFD800;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+nav ul a:hover {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    background-color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    nav {
+        padding: 3rem 1rem;
+    }
+
+    nav ul a {
+        padding: 1rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    nav {
+        padding: 2rem .5rem;
+    }
+
+    nav ul a {
+        padding: 1rem;
+        font-size: .8rem;
+        font-weight: bold;
+    }
+}
+
+/* NAVIGATION END */
+
+/* HEADER */
+
+header {
+    background-color: #FFD800;
+    padding: 4rem;
+    margin-top: 2rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+    header {
+        padding: 2rem;
+    }
+}
+
+
+/* HEADER END */
+
+/* RESULT */
+
+.open_game {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.open_game>.date {
+    font-size: 1.5rem;
+    color: #FFD800;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.open_game>.msg {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.open_game_result {
+    text-align: center;
+    padding: 1rem;
+}
+
+.open_game_result>p {
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.open_game_result>img {
+    width: 5rem;
+}
+
+@media screen and (max-width:425px) {
+    .open_game_result>.date {
+        font-size: 1rem;
+    }
+
+    .open_game>.msg {
+        font-size: 1.5rem;
+    }
+}
+
+/* RESULT END */
+
+/* DISAWER */
+
+.disawer_game {
+    background-color: #FFD800;
+    color: black;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.disawer_game>p {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.disawer_game>.time {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.disawer_game>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disawer_game>div>span {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.disawer_game>div>img {
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+/* DISAWER END */
+
+/* DELHI BAZAR CHAR */
+.delhi_bazar_chart_main {
+    background-color: white;
+    color: black;
+    padding: 1rem 0;
+}
+
+.delhi_bazar_chart {
+    background-color: #FFD800;
+    padding: 2rem;
+    text-align: center;
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+.delhi_bazar_chart>p {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+@media screen and (max-width:425px) {
+    .delhi_bazar_chart {
+        padding: 1rem;
+    }
+
+    .delhi_bazar_chart>p {
+        font-size: 1.5rem;
+    }
+}
+
+/* DELHI BAZAR CHAR END */
+
+/* SATTA RESULT TABLE */
+.satta_result_table {
+    width: 100%;
+    table-layout: fixed;
+    background-color: white;
+    text-align: center;
+    background-color: black;
+}
+
+.satta_result_table>thead {
+    width: 100%;
+}
+
+.satta_result_table>thead>tr {
+    background-color: black;
+    width: 100%;
+}
+
+.satta_result_table>thead>tr>th {
+    background-color: #111;
+    padding: 1rem 0;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.result_chart_game_name {
+    background-color: #FFD800;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.result_chart_game_name>a {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+.result_chart_game_name>span {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+}
+
+.white_coloumb {
+    background-color: white;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+/* SATTA RESULT TABLE END */
+
+/* PLAY BAZAR CHART */
+
+.play_bazar_chart {
+    background-color: white;
+    padding: 1rem 0;
+}
+
+.play_bazar_chart>div {
+    display: flex;
+    background: linear-gradient(#FF9E00, #FFD800);
+    justify-content: space-evenly;
+    padding: 2rem;
+    align-items: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.play_bazar_chart>div>p {
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.play_bazar_chart>div>button {
+    padding: 1rem 2rem;
+    background-color: #111;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+@media screen and (max-width:768px) {
+    .play_bazar_chart>div {
+        padding: 1rem;
+    }
+
+    .play_bazar_chart>div>p {
+        font-size: 1.5rem;
+    }
+
+    .play_bazar_chart>div>button {
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .play_bazar_chart>div {
+        flex-direction: column;
+    }
+
+    .play_bazar_chart>div>button {
+        margin-top: 1rem;
+    }
+}
+
+
+/* PLAY BAZAR CHART END */
+
+/* GAME & CONTACT INFO */
+.home_game_contact_info {
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: .5rem;
+    color: black;
+    padding-bottom: 1rem;
+}
+
+.home_game_info {
+    border: 5px dashed #FF0E01;
+    border-radius: 25px;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(#FF9E00, #FFD800, #fff);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.home_game_info li {
+    list-style: none;
+}
+
+.home_contact_info {
+    border: 5px dashed #FF0E01;
+    border-radius: 25px;
+    padding: 2rem 1rem;
+    text-align: center;
+    background: linear-gradient(#FF9E00, #FFD800, #fff);
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+@media screen and (max-width:1024px) {
+    .home_game_contact_info {
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .home_contact_info,
+    .home_game_info {
+        font-size: 1rem;
+    }
+}
+
+/* GAME & CONTACT INFO END */
+
+/* FAQ */
+.faq_heading {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+    padding: 20px 0;
+    background: #4b4b4b;
+}
+
+.Accordian_input__zKw_Y {
+    position: absolute;
+    opacity: 0;
+    z-index: -1
+}
+
+.Accordian_tabs___mQ3J {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .5);
+    width: 50%;
+    margin: auto auto .7rem
+}
+
+.Accordian_tab__t24lo {
+    width: 100%;
+    color: #fff;
+    overflow: hidden
+}
+
+.Accordian_tabLabel__UPw4z {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: #000;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.Accordian_tabLabel__UPw4z:hover {
+    background: #1a252f
+}
+
+.Accordian_tabLabel__UPw4z:after {
+    content: "\276F";
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    transition: all .35s
+}
+
+.Accordian_tabContent__b1_ee {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    font-size: 16px;
+    background: #fff;
+    transition: all .35s;
+    margin: 0 !important
+}
+
+.Accordian_tab-close__YaoIX {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: .75em;
+    background: #2c3e50;
+    cursor: pointer
+}
+
+.Accordian_input__zKw_Y:checked+.Accordian_tabLabel__UPw4z,
+.Accordian_tabClose__miLw_:hover {
+    background: #1a252f
+}
+
+.Accordian_input__zKw_Y:checked+.Accordian_tabLabel__UPw4z:after {
+    transform: rotate(90deg)
+}
+
+.Accordian_input__zKw_Y:checked~.Accordian_tabContent__b1_ee {
+    max-height: 100vh;
+    padding: 1em
+}
+
+@media(max-width: 767px) {
+    .Accordian_tabs___mQ3J {
+        width: 98%
+    }
+}
+
+/* FAQ END */
+
+/* BLOGS */
+.Thumbnail_section__p9qmo {
+    background-color: #080a0e;
+    color: #1f2937
+}
+
+.Thumbnail_container__E62Ic {
+    width: 100%;
+    padding: 1.5rem;
+    max-width: 90rem;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.Thumbnail_grid__RQb0r {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 1.5rem;
+    gap: 1.5rem
+}
+
+.Thumbnail_link__kF8ly {
+    background-color: #ffd800;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none
+}
+
+.Thumbnail_link__kF8ly:focus,
+.Thumbnail_link__kF8ly:hover {
+    text-decoration: none
+}
+
+.Thumbnail_image__5XTbe {
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-color: #6b7280;
+    width: 100%;
+    height: 11rem;
+    border-radius: .25rem
+}
+
+.Thumbnail_mainDiv__FPM0n {
+    padding: 1.5rem;
+    margin-top: .5rem
+}
+
+.Thumbnail_heading__mwZx2 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: #000
+}
+
+.Thumbnail_heading__mwZx2:hover {
+    text-decoration: underline
+}
+
+.Thumbnail_date__cEluq {
+    color: #4b5563;
+    font-size: .75rem;
+    line-height: 1rem
+}
+
+.Thumbnail_tagsDiv__UEOii {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem
+}
+
+.Thumbnail_tags__NDR7P {
+    color: #374151;
+    font-size: .875rem;
+    line-height: 1.25rem
+}
+
+@media(min-width: 360px) {
+    .Thumbnail_container__E62Ic {
+        padding: 1.5rem 0
+    }
+}
+
+@media(min-width: 640px) {
+    .Thumbnail_grid__RQb0r {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+}
+
+@media(min-width: 1024px) {
+    .Thumbnail_grid__RQb0r {
+        grid-template-columns: repeat(3, minmax(0, 1fr))
+    }
+}
+
+/* BLOGS END */
+
+/* PRIVACY HEADER */
+.privacy_header {
+    background-color: black;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.privacy_header>a {
+    color: #ffd800;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy_header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* PRIVACY HEADER END */
+
+/* FOOTER */
+footer {
+    background-color: #ffd800;
+    text-align: center;
+    color: black;
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+/* FOOTER END */
+
+/* DISCLAIMER */
+.disclaimer {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    background-color: black;
+    color: #ffd800;
+}
+
+/* DISCLAIMER END */
+
+/* CONTACT */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 2rem 0;
+}
+
+.contact>p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact img {
+    width: 5rem;
+}
+
+/* CONTACT END */
+
+/* LOGIN */
+.login {
+    padding: 2rem 0;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login>form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    width: 50%;
+}
+
+.login h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+input {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid black;
+}
+
+input[type=submit] {
+    margin-top: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 1rem 2rem;
+}
+
+
+@media screen and (max-width:768px) {
+    .login>form {
+        width: 90%;
+    }
+}
+
+/* LOGIN END */

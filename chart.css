@@ -1,0 +1,61 @@
+.chart_open_game {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+
+.pills-for-chart {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    gap: 5px;
+    padding: 10px;
+    background-color: white;
+}
+
+
+.single-pill {
+    background: #ffd800;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #000;
+    border-radius: 5px;
+    text-transform: uppercase
+}
+
+.single-pill:hover {
+    background: #000;
+    color: #ffd800;
+    cursor: pointer
+}
+
+
+@media screen and (max-width:768px) {
+    .pills-for-chart {
+        grid-template-columns: 1fr
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid white;
+}
+
+th,.table_date_num,.table_chart_section{
+    background-color: #ffd800;
+    color: black;
+    font-weight: bolder;
+}
